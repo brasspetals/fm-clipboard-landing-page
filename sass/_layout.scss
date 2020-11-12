@@ -328,7 +328,7 @@
     }
   }
 
-  &__icon:hover * .color-change {
+  svg:hover * {
     fill: $color-cyan;
     transition: all .4s;
   }

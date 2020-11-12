@@ -663,7 +663,7 @@ body {
   height: 2.5rem;
 }
 
-.footer__icon:hover * .color-change {
+.footer svg:hover * {
   fill: #26baa4;
   -webkit-transition: all .4s;
   transition: all .4s;
