@@ -1,0 +1,336 @@
+// Header
+.header {
+  background-image: url("../images/bg-header-mobile.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 12.2rem 3.2rem;
+
+  @media only screen and (min-width: 665px) {
+    background-image: url("../images/bg-header-desktop.png");
+  }
+
+  &__logo {
+    @media only screen and (min-width: 1050px) {
+      margin-top: 1rem;
+    }
+
+  }
+
+  &__content {
+    margin-top: 6.6rem;
+    text-align: center;
+    max-width: 50rem;
+
+    @media only screen and (min-width: 1050px) {
+      margin-top: 5.6rem;
+      max-width: 71rem;
+    }
+  }
+
+  &__links {
+    margin-top: 4.8rem;
+    display: grid;
+    grid-gap: 2.4rem;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    width: 100%;
+    max-width: 47rem;
+
+    @media only screen and (min-width: 488px) {
+      grid-gap: 1.6rem;
+    }
+  }
+}
+
+// Keep Track Section
+.keep-track {
+  margin: 3.8rem 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media only screen and (min-width: 1050px) {
+    margin: 2.8rem 3rem;
+  }
+
+  &__heading {
+    text-align: center;
+    max-width: 62rem;
+
+    @media only screen and (min-width: 1050px) {
+      max-width: 71rem;
+    }
+  }
+
+  &__lower-container {
+    margin-top: 6.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+    @media only screen and (min-width: 1050px) {
+      flex-direction: row;
+      margin-top: 8rem;
+    }
+
+    @media only screen and (min-width: 1500px) {
+      justify-content: center;
+    }
+  }
+
+  &__img {
+    width: 100%;
+    max-width: 75rem;
+
+    @media only screen and (min-width: 1050px) {
+      width: unset;
+      position: relative;
+      left: -4.5%;
+      flex: 0 0 55%;
+      margin-right: 45px;
+    }
+  }
+
+  &__features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 .5rem;
+    margin-top: 5.6rem;
+    max-width: 35rem;
+
+    @media only screen and (min-width: 1050px) {
+      flex: 1 1 40rem;
+      margin-top: 2.5rem;
+      max-width: 35rem;
+
+    }
+  }
+}
+
+// Access Section
+.access {
+  margin-top: 13.9rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media only screen and (min-width: 1050px) {
+    margin-top: 15rem;
+  }
+
+  &__heading {
+    text-align: center;
+    padding: 0 3rem;
+    max-width: 75rem;
+  }
+
+  &__img {
+    margin-top: 6rem;
+    width: 92.5%;
+    max-width: 91rem;
+
+    @media only screen and (min-width: 1050px) {
+      margin-top: 10rem;
+    }
+  }
+}
+
+// Supercharge Section
+.supercharge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 3rem;
+  margin-top: 9.7rem;
+
+  @media only screen and (min-width: 1050px) {
+    margin-top: 6.7rem;
+  }
+
+  &__heading {
+    text-align: center;
+  }
+
+  &__features {
+    margin-top: 8.8rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    @media only screen and (min-width: 1050px) {
+      margin-top: 7.7rem;
+    }
+  }
+
+  &__companies {
+    margin-top: 7.5rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 111.1rem;
+
+    @media only screen and (min-width: 1200px) {
+      margin-top: 10.5rem;
+    }
+
+    @media only screen and (min-width: 1400px) {
+      justify-content: space-between;
+    }
+  }
+}
+
+.company-logo {
+  flex: 0 0 auto;
+  margin: 0 5rem 6.7rem 5rem;
+
+  @media only screen and (min-width: 1400px) {
+    flex: 0 0 auto;
+    margin: 0;
+  }
+
+}
+
+// CTA Section
+.cta {
+  margin-top: 5.5rem;
+  padding: 0 3.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media only screen and (min-width: 1050px) {
+    margin-top: 16rem;
+  }
+
+  &__heading {
+    text-align: center;
+    max-width: 70rem;
+  }
+
+  &__links {
+    margin-top: 4.6rem;
+    display: grid;
+    grid-gap: 2.4rem;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    width: 100%;
+    max-width: 47rem;
+
+    @media only screen and (min-width: 488px) {
+      grid-gap: 1.6rem;
+    }
+  }
+}
+
+//Footer
+.footer {
+  margin-top: 17rem;
+  padding-bottom: 4.6rem;
+  background-color: $color-footer;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  opacity: .6;
+
+  @media only screen and (min-width: 1050px) {
+    margin-top: 15rem;
+    padding-bottom: 0;
+  }
+
+  &__content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 118rem;
+
+    @media only screen and (min-width: 1050px) {
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: space-between;
+      width: 77%;
+      min-width: 94rem;
+    }
+  }
+
+  &__logo {
+    margin-top: 5.2rem;
+    max-width: 5.5rem;
+
+    @media only screen and (min-width: 1050px) {
+      margin-top: 4.2rem;
+    }
+  }
+
+  &__links {
+    list-style: none;
+    margin-top: 4.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media only screen and (min-width: 1050px) {
+      margin-top: 4.2rem;
+      flex-flow: column wrap;
+      height: 10.5rem;
+      align-items: flex-start;
+      flex: 1;
+      max-width: 56.5rem;
+      margin-left: -7.8rem;
+    }
+
+    & li {
+      margin-bottom: 2.7rem;
+
+      @media only screen and (min-width: 1050px) {
+        margin-bottom: 2rem;
+      }
+    }
+  }
+
+  &__link-item {
+    text-decoration: none;
+    color: $color-gray-dark;
+    cursor: pointer;
+    transition: all .3s;
+
+    &:hover {
+      color: $color-cyan;
+    }
+  }
+
+  &__social {
+    margin-top: 2.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    @media only screen and (min-width: 1050px) {
+      margin-top: 6.2rem;
+    }
+  }
+
+  &__icon {
+    margin: 0 2rem;
+
+    @media only screen and (min-width: 1050px) {
+      margin: 0 0 0 2.3rem;
+    }
+
+    & svg {
+      width: auto;
+      height: 2.5rem;
+    }
+  }
+
+  &__icon:hover * .color-change {
+    fill: $color-cyan;
+    transition: all .4s;
+  }
+}
